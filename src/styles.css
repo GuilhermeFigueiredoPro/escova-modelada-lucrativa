@@ -781,3 +781,8 @@ html { scroll-padding-top: 24px; }
 .offer-panel .price-installments span, .offer-panel .installments-footnote { color: var(--sage); }
 .offer-panel .price-installments sup { color: var(--mint); }
 .installments-footnote { width: 100%; }
+.offer-panel .price-installments { display: flex !important; width: fit-content !important; margin: 14px auto 6px !important; color: var(--on-dark) !important; font-size: 17px; padding: 10px 22px; }
+.offer-panel .price-installments strong { color: var(--on-dark) !important; font-size: 24px; }
+.offer-panel .price-installments span { color: var(--sage) !important; }
+.offer-panel .price-kicker { color: var(--sage) !important; }
+.offer-panel .installments-footnote { color: var(--dark-muted) !important; }
