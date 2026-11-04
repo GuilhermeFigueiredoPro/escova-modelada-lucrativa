@@ -17,3 +17,4 @@
 - Use the official YouTube IFrame API from a client-mounted component, with cleanup and a user-gesture sound fallback; browser autoplay policies cannot be bypassed and the player must not control page release timing.
 - Use a single cleaned-up IntersectionObserver for one-time section accents after sales content release; content remains accessible without motion and animations honor reduced-motion preferences.
 - The illustrative countdown stores only its demo deadline in browser localStorage after hydration, never resets expired deadlines, and never represents a real offer restriction; no backend is needed for this non-commercial preview preference.
+- Render a configuration-driven placeholder line only when its value has content (trim before testing); an empty value must leave no element and no gap, so a filled block never shows dead space once the real text arrives.
