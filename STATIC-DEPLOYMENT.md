@@ -4,6 +4,8 @@ The home page has no database or server functions. Static prerendering is disabl
 
 For external Cloudflare Pages builds, Nitro uses the explicit `cloudflare-pages` preset and outputs public assets and the `_worker.js` Worker directory under `dist`. Publish the entire `dist` directory, not just `dist/client`. No SPA fallback is needed for this single-page site; section links are anchors.
 
+The ten authentic course photos are repository files under `public/assets` and use stable `/assets/*.webp` paths in the offer configuration. Vite copies them unchanged to the public build output (`dist/assets` for external Pages builds); no external photo service is required.
+
 - Build command: `npm run build`
 - Build output directory: `dist`
 - Deploy command: empty
