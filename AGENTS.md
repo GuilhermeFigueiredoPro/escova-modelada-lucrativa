@@ -11,7 +11,7 @@
 
 - Keep variable offer facts, legal URLs, SEO text and authentic photo slots in `src/config/offer.ts`; a single source avoids inconsistent sales claims and checkout destinations.
 - All purchase actions use `CheckoutButton`, validating the official Hotmart URL and showing an accessible confirmation notice until it is supplied; never navigate to a placeholder.
-- Keep the existing TanStack Start bootstrap and prerender `/` as visitor-independent HTML; the sales page needs no database or per-request server logic.
+- Keep the existing TanStack Start bootstrap and custom server entry; disable prerender and target Nitro's Cloudflare Pages Worker in `dist` for external deployment to avoid importing a nonexistent prerender server entry.
 - Use reusable Embla gallery navigation with no autoplay and an explicit empty state; the same structure must support authentic photos when supplied.
 - Keep presentation media and reveal timing in the offer configuration; the opening owns a single elapsed-time timer independent of playback, pauses, seeks or player retries, while sales content remains in static HTML hidden until release.
 - Use the official YouTube IFrame API from a client-mounted component, with cleanup and a user-gesture sound fallback; browser autoplay policies cannot be bypassed and the player must not control page release timing.

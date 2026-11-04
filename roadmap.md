@@ -1,4 +1,5 @@
 # Roadmap
+- [x] Disable static prerender, preserve custom server entry and configure external Cloudflare Pages Worker output in `dist`; verify managed build and existing page tests.
 - [x] Point every purchase CTA at the producer-supplied official checkout https://pay.hotmart.com/N105599202D and drop the non-payment notice.
 - [x] Embed supplied YouTube video with autoplay attempt, sound activation fallback and 25 seconds of actual playback before reveal.
 - [x] Add supplied photos 1–9 in numeric order with lazy loading and uniform frames; link developer Instagram.

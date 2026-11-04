@@ -7,6 +7,13 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // External Cloudflare Pages builds use this preset and its Worker layout.
+  // The Lovable editor retains its own managed preview output.
+  nitro: {
+    preset: "cloudflare-pages",
+    output: { dir: "dist" },
+    cloudflare: { nodeCompat: true },
+  },
   tanstackStart: {
     pages: [{ path: "/" }],
     prerender: { enabled: false },
