@@ -1,14 +1,3 @@
-import photo1 from "@/assets/escova-resultado-1.webp.asset.json";
-import photo2 from "@/assets/escova-resultado-2.webp.asset.json";
-import photo3 from "@/assets/escova-resultado-3.webp.asset.json";
-import photo4 from "@/assets/escova-resultado-4.webp.asset.json";
-import photo5 from "@/assets/escova-resultado-5.webp.asset.json";
-import photo6 from "@/assets/escova-resultado-6.webp.asset.json";
-import photo7 from "@/assets/escova-resultado-7.webp.asset.json";
-import photo8 from "@/assets/escova-resultado-8.webp.asset.json";
-import photo9 from "@/assets/escova-resultado-9.webp.asset.json";
-import instructorPhotoAsset from "@/assets/marcio-cardozo.webp.asset.json";
-
 // Replace explicit placeholders with producer-confirmed information before publishing.
 // Every purchase button reads this one URL. Keep the placeholder until an official URL is supplied.
 export const offer = {
@@ -60,19 +49,19 @@ export type CoursePhoto = { src: string; alt: string; width: number; height: num
 // Add a licensed authentic photo of the hairstyle; describe texture and finish in alt.
 export const heroPhoto: CoursePhoto | null = null;
 // Authentic authorized portrait of Márcio, supplied by the producer.
-export const instructorPhoto: CoursePhoto = { src: instructorPhotoAsset.url, alt: "Márcio Cardozo de camiseta preta, sorrindo de braços cruzados enquanto segura tesoura e pente no estúdio", width: 1200, height: 1600 };
+export const instructorPhoto: CoursePhoto = { src: "/assets/marcio-cardozo.webp", alt: "Márcio Cardozo de camiseta preta, sorrindo de braços cruzados enquanto segura tesoura e pente no estúdio", width: 1200, height: 1600 };
 // Example shape only: { src: importedPhotoUrl, alt: "Accurate result description", width: 1200, height: 1500 }.
 // No generated or stock images presented as actual course results.
 export const resultPhotos: CoursePhoto[] = [
-  { src: photo1.url, alt: "Cabelo longo com mechas loiras e ondas definidas, visto de costas", width: 1080, height: 1340 },
-  { src: photo2.url, alt: "Cabelo castanho longo com pontas modeladas e movimento", width: 920, height: 1268 },
-  { src: photo3.url, alt: "Cabelo preto curto com acabamento liso e pontas curvadas", width: 1080, height: 1280 },
-  { src: photo4.url, alt: "Montagem de ângulos de cabelo loiro com camadas modeladas", width: 1080, height: 1356 },
-  { src: photo5.url, alt: "Cabelo loiro em camadas com volume e pontas voltadas para fora", width: 1080, height: 1348 },
-  { src: photo6.url, alt: "Detalhe frontal de cabelo loiro com volume na raiz", width: 1080, height: 1338 },
-  { src: photo7.url, alt: "Perfil de cabelo loiro em camadas com movimento nas pontas", width: 1080, height: 1332 },
-  { src: photo8.url, alt: "Cabelo com mechas claras e camadas modeladas, visto de perfil", width: 1080, height: 1356 },
-  { src: photo9.url, alt: "Cabelo com mechas loiras e ondas volumosas, visto de costas", width: 1080, height: 1342 },
+  { src: "/assets/escova-resultado-1.webp", alt: "Cabelo longo com mechas loiras e ondas definidas, visto de costas", width: 1080, height: 1340 },
+  { src: "/assets/escova-resultado-2.webp", alt: "Cabelo castanho longo com pontas modeladas e movimento", width: 920, height: 1268 },
+  { src: "/assets/escova-resultado-3.webp", alt: "Cabelo preto curto com acabamento liso e pontas curvadas", width: 1080, height: 1280 },
+  { src: "/assets/escova-resultado-4.webp", alt: "Montagem de ângulos de cabelo loiro com camadas modeladas", width: 1080, height: 1356 },
+  { src: "/assets/escova-resultado-5.webp", alt: "Cabelo loiro em camadas com volume e pontas voltadas para fora", width: 1080, height: 1348 },
+  { src: "/assets/escova-resultado-6.webp", alt: "Detalhe frontal de cabelo loiro com volume na raiz", width: 1080, height: 1338 },
+  { src: "/assets/escova-resultado-7.webp", alt: "Perfil de cabelo loiro em camadas com movimento nas pontas", width: 1080, height: 1332 },
+  { src: "/assets/escova-resultado-8.webp", alt: "Cabelo com mechas claras e camadas modeladas, visto de perfil", width: 1080, height: 1356 },
+  { src: "/assets/escova-resultado-9.webp", alt: "Cabelo com mechas loiras e ondas volumosas, visto de costas", width: 1080, height: 1342 },
 ];
 
 export const faq = [

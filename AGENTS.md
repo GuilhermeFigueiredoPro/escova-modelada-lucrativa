@@ -13,6 +13,7 @@
 - All purchase actions use `CheckoutButton`, validating the official Hotmart URL and showing an accessible confirmation notice until it is supplied; never navigate to a placeholder.
 - Keep the existing TanStack Start bootstrap and custom server entry; disable prerender and target Nitro's Cloudflare Pages Worker in `dist` for external deployment to avoid importing a nonexistent prerender server entry.
 - Use reusable Embla gallery navigation with no autoplay and an explicit empty state; the same structure must support authentic photos when supplied.
+- Keep course photos as real WebP files in `public/assets` and reference their public paths from the offer configuration so external Cloudflare Pages deployments do not depend on Lovable asset serving.
 - Keep presentation media and reveal timing in the offer configuration; the opening owns a single elapsed-time timer independent of playback, pauses, seeks or player retries, while sales content remains in static HTML hidden until release.
 - Use the official YouTube IFrame API from a client-mounted component, with cleanup and a user-gesture sound fallback; browser autoplay policies cannot be bypassed and the player must not control page release timing.
 - Use a single cleaned-up IntersectionObserver for one-time section accents after sales content release; content remains accessible without motion and animations honor reduced-motion preferences.
