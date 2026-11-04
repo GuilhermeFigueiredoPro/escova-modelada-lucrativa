@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useCallback, useEffect, useState } from "react";
-import { ArrowUpRight, Check, ChevronDown, GraduationCap, Image, MonitorPlay, MoveUpRight, Scissors, Sparkles, Users, WandSparkles, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Check, ChevronDown, GraduationCap, Image, Info, MonitorPlay, MoveUpRight, Scissors, Sparkles, Users, WandSparkles, MessageCircle, ShieldCheck } from "lucide-react";
 import { CheckoutButton } from "@/components/course/checkout-button";
 import { ResultGallery } from "@/components/course/result-gallery";
 import { OfferCountdown } from "@/components/course/offer-countdown";
@@ -69,7 +69,7 @@ function Index() {
             [WandSparkles, "Acabamento de alto nível", "Valorize a finalização e o cuidado em cada atendimento."],
             [GraduationCap, "Evolução com clareza", "Um percurso do básico à execução profissional, também para iniciantes."],
           ] as const).map(([ItemIcon, title, text]) => <article className="learning-item" key={String(title)}><span className="item-number"><ItemIcon size={25} strokeWidth={1.5} aria-hidden="true" /></span><ArrowUpRight className="item-arrow" size={23} strokeWidth={1} /><h3>{title}</h3><p>{text}</p></article>)}</div>
-          <div className="learning-note"><p>Percurso proposto em até <strong>7 dias</strong>. A evolução depende da prática e da experiência; não há garantia de domínio nesse prazo.</p><span className="pending-field">{offer.courseContent}</span></div>
+          <div className="learning-note"><Info size={20} strokeWidth={1.6} aria-hidden="true" /><p>Percurso proposto em até <strong>7 dias</strong>. A evolução depende da prática e da experiência; não há garantia de domínio nesse prazo.</p>{offer.courseContent.trim() ? <span className="pending-field">{offer.courseContent}</span> : null}</div>
         </div>
       </section>
 
