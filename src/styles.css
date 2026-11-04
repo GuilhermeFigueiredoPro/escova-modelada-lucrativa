@@ -756,3 +756,22 @@ html { scroll-padding-top: 24px; }
 .site-footer { position: relative; background: linear-gradient(180deg, oklch(0.16 0.05 314), oklch(0.12 0.035 300)) !important; border-top: 0 !important; }
 .site-footer::before { content: ""; position: absolute; inset: 0 0 auto; height: 4px; background: linear-gradient(90deg, transparent, var(--sage), var(--mint), var(--sage), transparent); box-shadow: 0 0 22px color-mix(in oklch, var(--mint) 60%, transparent); }
 .benefit-strip .strip-inner { width: min(860px, calc(100% - 32px)) !important; }
+
+/* Installments & audience emphasis */
+.price-kicker { font-size: 11px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted-foreground); margin-top: 14px; }
+.offer-panel .offer-price { margin-top: 2px; }
+.price-installments { display: inline-flex; align-items: baseline; gap: 6px; margin-top: 10px; padding: 8px 18px; border-radius: 999px; background: color-mix(in oklch, var(--wine) 9%, transparent); border: 1px solid color-mix(in oklch, var(--wine) 22%, transparent); color: var(--plum); font-size: 15px; }
+.price-installments span { color: var(--muted-foreground); font-size: 14px; }
+.price-installments strong { font-size: 20px; font-weight: 800; }
+.price-installments sup { color: var(--wine); font-weight: 800; }
+.installments-footnote { margin-top: 10px; font-size: 11px; color: var(--muted-foreground); }
+.final-section .price-kicker { color: var(--sage); margin-top: 18px; }
+.final-section .price-installments { background: color-mix(in oklch, var(--mint) 12%, transparent); border-color: color-mix(in oklch, var(--mint) 35%, transparent); color: var(--on-dark); }
+.final-section .price-installments span { color: var(--sage); }
+.final-section .price-installments sup { color: var(--mint); }
+.audience-list { gap: 12px; }
+.audience-list li { align-items: center; padding: 16px 18px; border: 1px solid color-mix(in oklch, var(--wine) 18%, var(--border)); border-left: 3px solid var(--wine); border-radius: 12px; background: var(--card); box-shadow: 0 10px 24px -18px color-mix(in oklch, var(--plum) 55%, transparent); font-size: 16px; font-weight: 600; color: var(--foreground); transition: transform .2s ease; }
+.audience-list li:hover { transform: translateY(-2px); }
+.audience-list svg { width: 26px; height: 26px; margin-top: 0; padding: 5px; border-radius: 999px; background: var(--surface-plum); color: var(--wine); }
+@media (prefers-reduced-motion: reduce) { .audience-list li { transition: none; } .audience-list li:hover { transform: none; } }
+@media (max-width: 760px) { .audience-list li { font-size: 15px; padding: 14px; } .price-installments strong { font-size: 18px; } }

@@ -34,6 +34,7 @@ export const offer = {
   checkoutUrl: "https://pay.hotmart.com/N105599202D",
   price: "R$ 37,90",
   priceNote: "Condições de pagamento e parcelamento apresentadas no checkout oficial.",
+  installments: { count: 9, value: "R$ 4,98" },
   countdown: { durationHours: 24, storageKey: "escova-modelada-demo-deadline-v1", label: "Prévia do contador — prazo ilustrativo" },
   payment: "[INSERIR CONDIÇÕES DE PAGAMENTO]",
   guarantee: "Você tem 7 dias de garantia incondicional. Se não ficar satisfeito por qualquer motivo, é só entrar em contato que devolvemos 100% do valor investido.",
@@ -78,8 +79,8 @@ export const faq = [
   { question: "Preciso ter experiência?", answer: "Não. O curso também se dirige a quem está começando do zero e a profissionais da beleza que desejam desenvolver ou aprimorar a escova modelada." },
   { question: "O curso é online?", answer: "Sim, Escova Modelada Lucrativa é um curso online, com Márcio Cardozo HairStylist." },
   { question: "Consigo aprender em sete dias?", answer: "A proposta do produtor é um caminho de aprendizado do básico à execução profissional em até 7 dias. A evolução depende da sua experiência, prática e aplicação; não há garantia de domínio nesse prazo." },
-  { question: "Como recebo o acesso?", answer: "O curso é online. As orientações de entrega e o período de acesso serão informados nas condições oficiais de inscrição, antes da compra." },
-  { question: "Quais são as formas de pagamento?", answer: "As formas de pagamento e as condições de parcelamento serão apresentadas no checkout oficial da Hotmart." },
+  { question: "Como recebo o acesso?", answer: "Assim que o pagamento for confirmado, você recebe o acesso por e-mail. O curso fica dentro da plataforma da Hotmart, onde você entra com o seu próprio login." },
+  { question: "Quais são as formas de pagamento?", answer: "Você pode pagar à vista ou parcelado, em até 9x de R$ 4,98, direto no checkout oficial e seguro da Hotmart." },
   { question: "Existe garantia?", answer: offer.guarantee },
   { question: "Como solicito o reembolso?", answer: "Se não ficar satisfeito, entre em contato dentro dos 7 dias de garantia para solicitar a devolução de 100% do valor investido. O canal oficial de atendimento será informado antes da compra." },
 ];
