@@ -39,7 +39,7 @@ export const offer = {
   guarantee: "Você tem 7 dias de garantia incondicional. Se não ficar satisfeito por qualquer motivo, é só entrar em contato que devolvemos 100% do valor investido.",
   access: "[CONFIRMAR BÔNUS E ACESSO]",
   support: "[CONFIRMAR SUPORTE]",
-  courseContent: "CONTEUDO TESTE 123",
+  courseContent: "\n",
   termsUrl: "[INSERIR URL OFICIAL DOS TERMOS]",
   privacyUrl: "[INSERIR URL OFICIAL DA POLÍTICA DE PRIVACIDADE]",
   supportUrl: null as string | null,
