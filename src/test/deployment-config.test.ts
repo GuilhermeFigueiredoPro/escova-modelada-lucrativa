@@ -5,7 +5,13 @@ vi.mock("@lovable.dev/vite-tanstack-config", () => ({
   defineConfig: (options: unknown) => options,
 }));
 
-import config from "../../vite.config";
+import exportedConfig from "../../vite.config";
+
+// The mock returns input options, rather than the real wrapper's Vite callback.
+const config = exportedConfig as unknown as {
+  tanstackStart: { prerender: { enabled: boolean }; server: { entry: string } };
+  nitro: { preset: string; output: { dir: string } };
+};
 
 describe("Cloudflare Pages deployment configuration", () => {
   it("disables the static prerender pass", () => {
