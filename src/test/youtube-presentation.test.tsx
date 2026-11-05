@@ -6,6 +6,7 @@ afterEach(() => { cleanup(); vi.useRealTimers(); delete window.YT; });
 
 it("continues progress while paused and releases exactly after 25 elapsed seconds", async () => {
   vi.useFakeTimers({ toFake: ["setInterval", "clearInterval", "performance"] });
+  const configuredVideo = vi.fn();
   let current = 0;
   let state = 1;
   const fakePlayer = {
@@ -13,7 +14,8 @@ it("continues progress while paused and releases exactly after 25 elapsed second
     setVolume: vi.fn(), getCurrentTime: () => current, getPlayerState: () => state, destroy: vi.fn(),
   };
   window.YT = { Player: class {
-    constructor(_element: HTMLElement, options: { events: { onReady: (event: { target: typeof fakePlayer; data: number }) => void } }) {
+    constructor(_element: HTMLElement, options: { videoId: string; events: { onReady: (event: { target: typeof fakePlayer; data: number }) => void } }) {
+      configuredVideo(options.videoId);
       queueMicrotask(() => options.events.onReady({ target: fakePlayer, data: 1 }));
       return fakePlayer;
     }
@@ -21,6 +23,7 @@ it("continues progress while paused and releases exactly after 25 elapsed second
   const ready = vi.fn();
   const { rerender } = render(<PresentationOpening onReady={ready} />);
   await act(async () => { await Promise.resolve(); await Promise.resolve(); });
+  expect(configuredVideo).toHaveBeenCalledWith("IMUEvQPvA4U");
   await act(async () => { await vi.advanceTimersByTimeAsync(5000); });
   expect(screen.getByRole("progressbar")).toHaveAttribute("value", "20");
   expect(ready).not.toHaveBeenCalled();
