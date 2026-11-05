@@ -1,4 +1,5 @@
 # Roadmap
+- [ ] Review the existing page and apply only small visual refinements; verify desktop/mobile layout and FAQ interaction without changing content or page structure.
 - [x] Include all ten authentic WebP photos in public/assets, replace internal asset references and verify all ten load through the UI; managed build passes, external dist output remains unverified until Cloudflare builds it.
 - [x] Replace the presentation video with producer-supplied YouTube IMUEvQPvA4U; test and browser confirm player ID, but live playback remains unverified in the sandbox.
 - [x] Disable static prerender, preserve custom server entry and configure external Cloudflare Pages Worker output in `dist`; verify managed build and existing page tests.
