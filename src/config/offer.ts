@@ -15,8 +15,8 @@ export const offer = {
     { value: "L'Oréal", label: "Ex-Técnico" },
   ],
   presentation: {
-    videoUrl: "https://youtu.be/LwrKqhHQBU0?is=VuEhYzABtWLK2sUa" as string | null,
-    youtubeVideoId: "LwrKqhHQBU0",
+    videoUrl: "https://youtu.be/IMUEvQPvA4U?is=0XD9APx-mP9uerx3" as string | null,
+    youtubeVideoId: "IMUEvQPvA4U",
     revealAfterSeconds: 25,
     subtitle: "Aprenda um acabamento profissional com Márcio Cardozo, mesmo começando do zero.",
   },
