@@ -1,6 +1,6 @@
 # Roadmap
 - [x] Include all ten authentic WebP photos in public/assets, replace internal asset references and verify all ten load through the UI; managed build passes, external dist output remains unverified until Cloudflare builds it.
-- [ ] Replace the presentation video with producer-supplied YouTube IMUEvQPvA4U and verify player configuration.
+- [x] Replace the presentation video with producer-supplied YouTube IMUEvQPvA4U; test and browser confirm player ID, but live playback remains unverified in the sandbox.
 - [x] Disable static prerender, preserve custom server entry and configure external Cloudflare Pages Worker output in `dist`; verify managed build and existing page tests.
 - [x] Point every purchase CTA at the producer-supplied official checkout https://pay.hotmart.com/N105599202D and drop the non-payment notice.
 - [x] Embed supplied YouTube video with autoplay attempt, sound activation fallback and 25 seconds of actual playback before reveal.
