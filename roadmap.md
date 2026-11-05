@@ -1,5 +1,5 @@
 # Roadmap
-- [ ] Review the existing page and apply only small visual refinements; verify desktop/mobile layout and FAQ interaction without changing content or page structure.
+- [x] Apply small refinements to shadows, title wrapping, price sizing, portrait statistics and expanded FAQ states; verified at 1280/1152/390/320px without overflow or page errors, with three existing tests passing and no content or structure changes.
 - [x] Include all ten authentic WebP photos in public/assets, replace internal asset references and verify all ten load through the UI; managed build passes, external dist output remains unverified until Cloudflare builds it.
 - [x] Replace the presentation video with producer-supplied YouTube IMUEvQPvA4U; test and browser confirm player ID, but live playback remains unverified in the sandbox.
 - [x] Disable static prerender, preserve custom server entry and configure external Cloudflare Pages Worker output in `dist`; verify managed build and existing page tests.
